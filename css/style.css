@@ -1,0 +1,245 @@
+/* ==========================
+   Base Styles (Mobile First)
+========================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* ==========================
+   Accessibility
+========================== */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    background: #000;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header {
+    background-color: #d52b1e; /* Canada red */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* ==========================
+   Navigation (Flexbox)
+========================== */
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* ==========================
+   Main Content
+========================== */
+
+main {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================
+   Grid Layout
+========================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* ==========================
+   Images & Video
+========================== */
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Make card images same size */
+/* ChatGPT: How can I make images inside CSS cards appear the same size even if the original image dimensions are different? I want a responsive solution that works on mobile and desktop without stretching the images.*/
+.card img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+/* End of AI prompt suggestion*/
+
+.video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+/* ==========================
+   Table
+========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+/* ==========================
+   Blockquote
+========================== */
+
+blockquote {
+    border-left: 5px solid #d52b1e;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+/* ==========================
+   Form
+========================== */
+
+form {
+    margin-top: 1rem;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: #d52b1e;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ==========================
+   Tablet (768px+)
+========================== */
+
+@media (min-width: 768px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ==========================
+   Desktop (1024px+)
+========================== */
+
+@media (min-width: 1024px) {
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
