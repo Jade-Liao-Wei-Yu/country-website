@@ -1,18 +1,18 @@
-/* ==========================
-   Base Styles (Mobile First)
-========================== */
+/* 
+   Mobile
+*/
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* At least one custom font used */
     line-height: 1.6;
     margin: 0;
     background-color: #ffffff;
     color: #333;
 }
 
-/* ==========================
+/* 
    Accessibility
-========================== */
+*/
 
 .skip-link {
     position: absolute;
@@ -29,12 +29,12 @@ body {
     text-decoration: none;
 }
 
-/* ==========================
+/* 
    Header
-========================== */
+ */
 
 header {
-    background-color: #d52b1e; /* Canada red */
+    background-color: #d52b1e; 
     color: white;
     text-align: center;
     padding: 1.5rem 1rem;
@@ -45,9 +45,9 @@ header h1 {
     font-size: 2rem;
 }
 
-/* ==========================
-   Navigation (Flexbox)
-========================== */
+/* 
+   Navigation - Flexbox
+*/
 
 nav ul {
     display: flex;
@@ -69,9 +69,9 @@ nav a:focus {
     text-decoration: underline;
 }
 
-/* ==========================
-   Main Content
-========================== */
+/*
+   Main
+ */
 
 main {
     padding: 1.5rem;
@@ -79,9 +79,9 @@ main {
     margin: auto;
 }
 
-/* ==========================
+/* 
    Grid Layout
-========================== */
+*/
 
 .grid-container {
     display: grid;
@@ -95,9 +95,9 @@ main {
     border-radius: 10px;
 }
 
-/* ==========================
+/* 
    Images & Video
-========================== */
+ */
 
 img {
     width: 100%;
@@ -112,20 +112,22 @@ img {
 }
 /* End of AI prompt suggestion*/
 
+/* ChatGPT: How can I embed a YouTube video in CSS? I want the video to be responsive and maintain its aspect ratio on different screen sizes. */
 .video {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 10px;
 }
+/* End of AI prompt suggestion*/
 
 figure {
     margin: 0;
 }
 
-/* ==========================
+/* 
    Table
-========================== */
+ */
 
 table {
     width: 100%;
@@ -149,9 +151,9 @@ th {
     background-color: #eeeeee;
 }
 
-/* ==========================
+/* 
    Blockquote
-========================== */
+ */
 
 blockquote {
     border-left: 5px solid #d52b1e;
@@ -160,9 +162,9 @@ blockquote {
     font-style: italic;
 }
 
-/* ==========================
+/* 
    Form
-========================== */
+ */
 
 form {
     margin-top: 1rem;
@@ -203,9 +205,9 @@ button:hover {
     opacity: 0.9;
 }
 
-/* ==========================
+/* 
    Footer
-========================== */
+*/
 
 footer {
     background-color: #222;
@@ -215,9 +217,13 @@ footer {
     margin-top: 2rem;
 }
 
-/* ==========================
+/* 
    Tablet (768px+)
-========================== */
+ */
+
+ /* ChatGPT: What is the recommended CSS breakpoint for tablet screens in responsive web design? 
+ Please suggest best practices for media query breakpoints for mobile, tablet, and desktop layouts.
+*/
 
 @media (min-width: 768px) {
 
@@ -232,9 +238,9 @@ footer {
 
 }
 
-/* ==========================
+/* 
    Desktop (1024px+)
-========================== */
+ */
 
 @media (min-width: 1024px) {
 
@@ -243,4 +249,3 @@ footer {
     }
 
 }
-/* homepage styling update */
